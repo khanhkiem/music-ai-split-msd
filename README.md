@@ -4,7 +4,7 @@ Custom remake for our specific purpose
 
 # MSD_split_for_tagging
 
-By Keunwoo Choi
+By Keunwoo Choi (with edit)
 
 This split setting is used in [my ismir paper (Automatic Tagging using Deep Convolutional Neural Networks)](https://arxiv.org/abs/1606.00298) and [my icassp 2017 submission (Convolutional Recurrent Neural Networks for Music Classification)](https://arxiv.org/abs/1609.04243). 
 
@@ -15,10 +15,10 @@ FYI, similar models from the models in those two papers are released in https://
 ### x
 There are three formats - 7d, MSD, and filename. One line, one value, i.e., separated by `\n`. No header. 
 
-Filenames are in a format of `3/6/36122424.npy` for example. Probably you want to change it as `.clip.mp3` if you and I are connected by some colleagues :) 
+Filenames are in a format of `3/6/36122424` for example.
 
 ### y
-If you want to use the tags I selected, you can simply use the `{train, valid, test}_y.npy` as `y` labels. 
+If you want to use the tags I selected, you can simply use the `{, val_, ver_}y.npy` as `y` labels. 
 
 ### top-50 tags
 ```python
